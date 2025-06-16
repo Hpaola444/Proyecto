@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/">
+  <link rel="stylesheet" href="css/">
+  <script src="js/"></script>
+  <title>Reserva</title>
+</head>
+<body>
+  <!-- Header -->
+
+  <header id="main-header">
+    <div class="header-container">
+      <h1 class="logo">CANDEL HOTEL</h1>
+      <figure class="logo-img">
+        <img src="img/restaurante2.jpg" alt="Bar">
+      </figure>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios<ul>
+                <li><a href="spa.html">Spa</a></li>
+                <li><a href="gym.html">GYM</a></li>
+                <li><a href="ofertas.html">Ofertas</a></li>
+              </ul></a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li><a href="restaurante.html">Restaurante<ul>
+                <li><a href="bar.html">Bar</a></li>
+              </ul></a></li>
+          <li><a href="iniciarSesion.html">Reserva Ya!</a></li>
+        </ul>
+        <div class="nav-profile">
+          <figure>
+            <a href="perfil.html">
+              <img src="img/profile.jpg" alt="icon" width="40px">
+            </a>
+          </figure>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Reserva inicial -->
+<div id="modelo_reserva" class="modal">
+  <div class="modelo-contenido">
+    <h2>Ingresa los datos de tu reserva</h2>
+    <form id="formReservaInicio">
+      <label for="fechaLlegada">Fecha de llegada:</label>
+      <input type="date" id="fechaLlegada" required>
+
+      <label for="fechaSalida">Fecha de salida:</label>
+      <input type="date" id="fechaSalida" required>
+
+      <label for="habitaciones">Habitaciones:</label>
+      <input type="number" id="habitaciones" min="1" required>
+
+      <label for="adultos">Adultos:</label>
+      <input type="number" id="adultos" min="1" required>
+
+      <label for="ninos">Niños:</label>
+      <input type="number" id="ninos" min="0" required>
+
+      <label for="edadNino">Edad del niño:</label>
+      <input type="number" id="edadNino" name="edadNino" min="0" max="17" placeholder="Edad" required>
+
+      <button type="submit">Reservar</button>
+    </form>
+  </div>
+</div>
+
+  <main>
+<div class="container">
+ 
+  <h2>Registro de Hotel</h2>
+
+  <div class="pasos" id="pasos">
+    <div paso="1">Habitación</div>
+    <div paso="2">Comodidades</div>
+    <div paso="3">Información personal</div>
+    <div paso="4">Pago</div>
+  </div>
+ <section>
+  <form id="hotel_Form">
+    <!-- Paso 1: Elegir habitación -->
+    <div class="step active" id="step1">
+      <h3> Elige tu habitación</h3>
+     <div class="main-card">
+      <img src="img/individual1.jpg" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi1.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble1.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble1.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite.jpg" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite1.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual2.webp" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi2.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite2.jpg" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite2.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble2.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble2.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite3.jpg" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite3.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual3.avif" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi3.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble3.jpg" alt="Habitación doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble3.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite4.jpg" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite4.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual4.jpg" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi4.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble4.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble4.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble5.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble5.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual5.jpg" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi5.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite5.jpg" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite5.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual5.jpg" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi6.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble6.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble6.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite6.jpg" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite6.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble7.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble7.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite7.webp" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite7.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual7.jpg" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi7.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/suite8.avif" alt="Habitación Suite" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Suite</h2>
+        <p class="main-info">Experimenta el lujo y la amplitud en nuestra exclusiva suite. Esta opción superior te brinda una zona de estar separada y comodidades adicionales para una experiencia inolvidable.</p>
+        <div class="main-reserva">
+          <a href="infoSuite8.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/individual8.jpg" alt="Habitación Individual" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Individual</h2>
+        <p class="main-info">Disfruta de la tranquilidad y la privacidad en nuestra acogedora habitación individual. Perfecta para el viajero
+        solitario, este espacio te ofrece la comodidad ideal para un descanso reparador.</p>
+        <div class="main-reserva">
+          <a href="infoIndi8.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+	<div class="main-card">
+      <img src="img/doble8.jpg" alt="Habitación Doble" class="main-img">
+      <div class="p-4">
+        <h2 class="main-titulo">Habitación Doble</h2>
+        <p class="main-info">Ideal para parejas o amigos, nuestra habitación doble ofrece un ambiente espacioso y confortable. Aquí encontrarás todo
+        lo necesario para una estancia placentera y relajante.</p>
+        <div class="main-reserva">
+          <a href="infoDoble8.html" class="descripcion">Leer más...</a>
+          <button class="reservar">Reservar Ya</button>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+    <!-- Paso 2: Comodidades -->
+    <div class="step" id="step2">
+      <h3> Elige comodidades</h3>
+      <label><input type="checkbox" name="comodidades" value="Desayuno incluido"> Desayuno al cuarto</label>
+      <label><input type="checkbox" name="comodidades" value="Gym"> Gym con entrenador personal</label>
+      <label><input type="checkbox" name="comodidades" value="Spa"> Spa</label>
+      <label><input type="checkbox" name="comodidades" value="Mini bar"> Mini bar en el cuarto</label>
+      <div class="buttons">
+        <button type="button">Atrás</button>
+        <button type="button">Siguiente</button>
+      </div>
+    </div>
+    </section>
+
+    <section>
+    <!-- Paso 3: Verificar datos personales-->
+    <div class="step" id="step3">
+      <h3> Información personal</h3>
+       <label for="nombre">Nombre:</label>
+        <input type="text"placeholder="Nombre" id="nombre" autocomplete="on" autofocus required>
+        <br>
+
+        <label for="apelido">Apellidos:</label>
+        <input type="text" placeholder="Apellido" id="apellido" autocomplete="on" required>
+        <br>
+         <label for="email">E-mail</label>
+          <p>Recibirá su confirmación a este correo</p>
+        <input type="email" placeholder="E-mail" id="email" autocomplete="on" required>
+        <br>
+         <label for="telefono">Telefono</label>
+          <p>Llamaremos en caso de presentar problemas con su reserva</p>
+        <input type="tel" placeholder="Telefono" id="telefono" required>
+       
+      <div class="buttons">
+        <button type="button">Atrás</button>
+        <button type="button">Confirmar</button>
+      </div>
+    </div>
+    </section>
+    
+    <section>
+    <!-- Paso 4: Pago -->
+     <h3>Politica</h3>
+     <h5>Garantia</h5>
+     <p>Se requiere un depósito del 50% al momento de la reserva, y el saldo restante se paga al momento del check-in.</p>
+     <h5>Cancelación</h5>
+     <p>Si se cancela entre las 72 y 24 horas previas al día de llegada, se hará un cargo en su tarjeta de crédito del 50% del importe de la primera noche.</p>
+    <div class="step" id="step4">
+      <h3>Información de pago detallada</h3>
+      <label><input type="checkbox" name="pagar completo" value="pagar completo">Pagar completo</label>
+      <br>
+      <label><input type="checkbox" name="pagar la mitad" value="pagar la mitad">Pagar la mitad</label>
+      <h3>Detalle de la tarjeta</h3>
+      <h5>Pagar con tarjeta de credito/debito</h5>
+      <p>Debera presentarse una forma valida de pago en el check-in.</p>
+      <img src="img/tarjeta.png" alt="tarjeta de credito/debito">
+      <img src="img/tarjeta2.png" alt="tarjeta de credito/debito">
+      <img src="img/tarjeta3.png" alt="tarjeta de credito/debito">
+      <br>
+      <label for="nombreTitular">Nombre del titular:</label>
+      <input type="text" id="nombreTitular" placeholder="Nombre del titular" required>
+      <label for="numeroTarjeta">Número de tarjeta:</label>
+      <input type="text" id="numeroTarjeta" placeholder="Número de tarjeta" required>
+      <label for="fechaExpiracion">Fecha de expiración:</label>
+      <input type="month" id="fechaExpiracion" required>
+      <label for="codigoSeguridad">Código de seguridad:</label>
+      <input type="text" id="codigoSeguridad" placeholder="Código de seguridad" required>
+      <h3>Resumen de la reserva</h3>
+      <p>Habitación: <span id="resumenHabitacion"></span></p>
+      <p>Comodidades: <span id="resumenComodidades"></span></p>
+      <p>Nombre: <span id="resumenNombre"></span></p>
+      <p>Apellidos: <span id="resumenApellidos"></span></p>
+      <div class="buttons">
+        <button type="button">Atrás</button>
+        <button type="submit">Finalizar reserva</button>
+      </div>
+    </div>
+    
+        <button type="button">Hacer otra reserva</button>
+      </div>
+    </div>
+    </section>
+
+  </form>
+    <h3>Resumen de Pago</h3>
+<div class="resumen-pago">
+  <p><strong>Fechas:</strong> <span id="resumenFechas"></span></p>
+  <p><strong>Habitaciones:</strong> <span id="resumenHabitaciones"></span></p>
+  <p><strong>Adultos:</strong> <span id="resumenAdultos"></span></p>
+  <p><strong>Niños:</strong> <span id="resumenNinos"></span></p>
+  <p><strong>Edad del niño:</strong> <span id="resumenEdadNino"></span></p>
+  <p><strong>Comodidades:</strong> <span id="resumenComodidades"></span></p>
+  <p><strong>Subtotal estimado:</strong> $<span id="subtotal"></span> USD</p>
+  <p><strong>Pago seleccionado:</strong> <span id="tipoPago"></span></p>
+  <p><strong>Total a pagar ahora:</strong> $<span id="totalAhora"></span> USD</p>
+</div>
+</div>
+</main>
+<!-- ASIDE Y FOOTER -->
+  <aside id="info-footer" class="footer-aside">
+    <div class="aside-column">
+      <h2>Candel Hotel</h2>
+      <p>
+        El Hotel Candel te invita a experimentar una estancia donde el confort y la tranquilidad se encuentran. Ubicado
+        estratégicamente, nuestro hotel está diseñado para ser tu santuario perfecto, ya sea que viajes por negocios o
+        placer.
+        Relájate en nuestras acogedoras habitaciones, donde cada detalle ha sido cuidadosamente seleccionado para asegurar
+        tu
+        máximo descanso y satisfacción. En el Hotel Candel, nos dedicamos a ofrecerte una experiencia inolvidable.
+      </p>
+      <span><img src="img/playstore.png" alt="Play Store"></span>
+    </div>
+    <div class="aside-column">
+      <h3>Nosotros</h3>
+      <p href="nosotros.html">¿Quiénes somos?</p>
+      <p href="contactos.html">Contáctanos</p>
+    </div>
+    <div class="aside-column">
+      <h3>AYUDA</h3>
+      <p>¿Cómo se reservar?</p>
+      <p>¿Por qué nosotros?</p>
+    </div>
+    <div class="aside-column">
+      <h3>INFO CONTACTO</h3>
+      <p>Teléfono: 1234567890</p>
+      <p>Email: CandelHotel@gmail.com</p>
+      <div class="social-icons">
+        <span><img src="img/facebook.png" alt="Facebook"></span>
+        <span><img src="img/ig.png" alt="Instagram"></span>
+        <span><img src="img/x.webp" alt="X"></span>
+        <span><img src="img/youtube.png" alt="Youtube"></span>
+      </div>
+    </div>
+  </aside>
+  <footer id="main-footer">
+    <p>
+      &copy; Todos los derechos reservados por Candel Hotel - 2025. Creado por
+      Sary, Christopher y Monica.
+    </p>
+  </footer>
+
+</body>
+</html>
